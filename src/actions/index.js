@@ -9,3 +9,9 @@ export const sub = () => {
     type: "DECREMENT"
   }
 }
+
+export const show = () => {
+  return {
+    type: 'Name'
+  }
+};
