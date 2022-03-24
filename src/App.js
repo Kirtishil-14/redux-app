@@ -1,6 +1,6 @@
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { add, sub, show } from './actions/index';
+import { add, sub, small, big } from './actions/index';
 
 function App() {
   const myState = useSelector((state) => state.changeNum);
@@ -13,7 +13,8 @@ function App() {
       <button onClick={() => dispatch(add())}>+</button>
       <div>
         {name}
-        <button onClick={() => dispatch(show())}>Show</button>
+        <button onClick={() => dispatch(small())}>small</button>
+        <button onClick={() => dispatch(big())}>big</button>
       </div>
     </div>
   );

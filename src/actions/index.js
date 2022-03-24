@@ -10,8 +10,14 @@ export const sub = () => {
   }
 }
 
-export const show = () => {
+export const small = () => {
   return {
-    type: 'Name'
+    type: 'small'
+  }
+};
+
+export const big = () => {
+  return {
+    type: 'big'
   }
 };
